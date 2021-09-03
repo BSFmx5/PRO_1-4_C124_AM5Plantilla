@@ -12,9 +12,9 @@ while(True):
     # Display the resulting frame
     cv2.imshow('frame', frame)
       
-    # the 'q' button is set as the
-    # quitting button 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    # Quit window with spacebar
+    key = cv2.waitKey(1)
+    if key == 32:
         break
   
 # After the loop release the cap object
