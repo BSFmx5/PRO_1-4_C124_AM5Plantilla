@@ -14,6 +14,7 @@ while(True):
       
     # Quit window with spacebar
     key = cv2.waitKey(1)
+    
     if key == 32:
         break
   
